@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     css: [
         '~/assets/css/app.css',
-        //'~/assets/css/style.css',
+        '~/assets/css/style.css',
     ],
     postcss: {
         plugins: {
