@@ -5,7 +5,7 @@
         <div class="flex lg:flex-1">
           <a href="/" class="-m-1.5 p-1.5">
             <span class="sr-only">Nucleus</span>
-            <img class="h-12" src="~/assets/images/logo.svg" alt="" />
+            <img class="h-10" src="~/assets/images/logo.svg" alt="" />
           </a>
         </div>
         <div class="lg:flex lg:flex-1 lg:justify-end">
@@ -25,13 +25,13 @@
             <h1 class="text-2xl font-bold tracking-tight text-white sm:text-5xl mt-10 font-poppins">Let’s stay connected</h1>
             <p class="mt-6 text-sm sm:text-lg leading-8 text-gray-400 font-poppins">We are always happy to hear from you. Fill out the form and we will get back to you <br class="hidden lg:block">within 24hrs</p>
             <div class="mt-10 flex flex-col lg:flex-row justify-between gap-x-[200px]">
-              <div class="flex justify-between lg:mt-20 w-2/4">
+              <div class="flex-col flex md:flex-row justify-between lg:mt-20 w-2/4">
                 <div>
                   <img src="~/assets/images/message-icon.png" alt="">
                   <h3 class="text-white text-2xl mt-5 font-bold font-poppins">Email</h3>
                   <h5 class="text-gray-600 mt-4 font-poppins">nucleus@nightlifelabs.io</h5>
                 </div>
-                <div class="ml-20 lg:ml-0">
+                <div class="mt-10 lg:mt-0">
                   <img src="~/assets/images/message-icon.png" alt="">
                   <h3 class="text-white text-2xl mt-5 font-bold font-poppins">Socials</h3>
                   <div class="flex justify-between gap-5 mt-4">

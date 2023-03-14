@@ -16,7 +16,7 @@
           <div class="flex lg:flex-1">
             <a href="/" class="-m-1.5 p-1.5">
               <span class="sr-only">Nucleus</span>
-              <img class="h-10 lg:h-12" src="~/assets/images/logo.svg" alt="" />
+              <img class="h-10 lg:h-10" src="~/assets/images/logo.svg" alt="" />
             </a>
           </div>
           <div class="lg:flex lg:flex-1 lg:justify-end">
@@ -34,7 +34,7 @@
               <p class="mt-6 text-lg sm:text-lg leading-8 text-gray-200 font-poppins">Be the first to know before we go live...</p>
               <form on-submit="handleSubmit.preventDefault()">
                 <div class="mt-10 flex flex-col lg:items-center justify-center gap-x-6">
-                  <div class="bg-gradient-to-r from-[#9089FC] to-[#EA5B2B] pt-0 pb-0.5 rounded-full w-[350px] lg:w-[551px]">
+                  <div class="bg-gradient-to-r from-[#9089FC] to-[#EA5B2B] pt-0 pb-0.5 rounded-full w-full lg:w-[551px]">
                     <input type="text" name="" id="" class="bg-[#000000] text-white font-poppins border-0 rounded-full focus:border-0 focus:ring-0 w-full" placeholder="Type your email here...">
                   </div>
                   <button href="#" class="gradient-button text-sm font-semibold font-poppins text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-5">
