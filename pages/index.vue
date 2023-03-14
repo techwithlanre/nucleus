@@ -64,17 +64,21 @@
     methods: {
         async handleSubmit(e) {
           e.preventDefault();
-          const postData = {
-            'email': this.form.email
+          if(this.form.email.length > 0) {
+            const postData = {
+              'email': this.form.email
+            }
+            const { data: response } = await useFetch('http://nucleus.test/api/waitlist', {
+                method: 'post',
+                body: JSON.stringify(postData)
+            })
+            
+            console.log(response);
+            this.form.email = "";
+            alert('You have been added to our waitlist!')
+          } else {
+             alert('Enter your email address')
           }
-          const { data: response } = await useFetch('http://nucleus.test/api/waitlist', {
-              method: 'post',
-              body: JSON.stringify(postData)
-          })
-          
-          console.log(response);
-          this.form.email = "";
-          alert('You have been added to our waitlist!')
         }
     }
 }
