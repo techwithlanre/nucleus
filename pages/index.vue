@@ -37,8 +37,8 @@
                   <div class="bg-gradient-to-r from-[#9089FC] to-[#EA5B2B] pt-0 pb-0.5 rounded-full w-full lg:w-[551px]">
                     <input v-model="form.email" type="text" name="" id="" class="bg-[#000000] text-white font-poppins border-0 rounded-full focus:border-0 focus:ring-0 w-full" placeholder="Type your email here...">
                   </div>
-                  <img v-if="this.loading" src="~/assets/images/spinner.svg" class="h-3" alt="">
-                  <button v-if="!this.loading" type="button" @click="handleSubmit" class="gradient-button text-sm font-semibold font-poppins text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-5">
+                  <!-- <img v-if="this.loading" src="~/assets/images/spinner.svg" class="h-3" alt=""> -->
+                  <button type="button" @click="handleSubmit" class="gradient-button text-sm font-semibold font-poppins text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-5">
                     <span>Join the waitlist</span>
                   </button>
                 </div>
@@ -55,7 +55,7 @@
     name: 'Home',
     data() {
         return {
-          loading: false,
+          done: false,
           form: {
               email: ''
           }
@@ -63,21 +63,18 @@
     },
     methods: {
         async handleSubmit(e) {
-          this.loading = true;
           e.preventDefault();
           const postData = {
             'email': this.form.email
           }
-          console.log(postData);
           const { data: response } = await useFetch('http://nucleus.test/api/waitlist', {
               method: 'post',
               body: JSON.stringify(postData)
           })
-
-          if (response) {
-              console.log(response);
-          }
-          this.loading = false;
+          
+          console.log(response);
+          this.form.email = "";
+          alert('You have been added to our waitlist!')
         }
     }
 }
