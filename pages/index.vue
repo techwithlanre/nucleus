@@ -32,12 +32,12 @@
             <div class="lg:text-center">
               <h1 class="text-4xl font-bold tracking-tight text-white sm:text-4xl font-poppins">Experience the best of decentralized gaming <br><span class="gradient-text">Nucleus</span> is coming.</h1>
               <p class="mt-6 text-lg sm:text-lg leading-8 text-gray-200 font-poppins">Be the first to know before we go live...</p>
-              <form on-submit="handleSubmit.preventDefault()">
+              <form>
                 <div class="mt-10 flex flex-col lg:items-center justify-center gap-x-6">
                   <div class="bg-gradient-to-r from-[#9089FC] to-[#EA5B2B] pt-0 pb-0.5 rounded-full w-full lg:w-[551px]">
                     <input type="text" name="" id="" class="bg-[#000000] text-white font-poppins border-0 rounded-full focus:border-0 focus:ring-0 w-full" placeholder="Type your email here...">
                   </div>
-                  <button href="#" class="gradient-button text-sm font-semibold font-poppins text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-5">
+                  <button type="button" @click="handleSubmit" class="gradient-button text-sm font-semibold font-poppins text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-5">
                     <span>Join the waitlist</span>
                   </button>
                 </div>
@@ -61,16 +61,17 @@
         }
     },
     methods: {
-        async handleSubmit() {
-            const { data: response } = await useFetch('/api/text', {
+        async handleSubmit(e) {
+            e.preventDefault();
+            const { data: response } = await useFetch('http://nucleus.test/api/waitlist', {
                 method: 'post',
                 body: {
-                    data: this.form.email
+                    email: this.form.email
                 }
             })
 
             if (response) {
-                alert(response.value);
+                console.log(response.data);
             }
         }
     }
