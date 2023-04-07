@@ -14,4 +14,11 @@ export default defineNuxtConfig({
         'nuxt-headlessui',
         '@formkit/nuxt'
     ],
+    runtimeConfig: {
+        MAILHOST: process.env.MAILHOST,
+        MAILPORT: process.env.MAILPORT,
+        MAILUSER: process.env.MAILUSER,
+        MAILPASSWORD: process.env.MAILPASSWORD,
+        CONTACTMAIL: process.env.MAILHOST
+    }
 })

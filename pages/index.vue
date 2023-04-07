@@ -62,7 +62,7 @@
             const postData = {
               'email': this.form.email
             }
-            const { data: response } = await useFetch('http://nucleus.test/api/waitlist', {
+            const { data: response } = await useFetch('http://neutron.mystagingenv.xyz/api/waitlist', {
                 method: 'post',
                 body: JSON.stringify(postData)
             })

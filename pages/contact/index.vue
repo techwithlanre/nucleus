@@ -29,7 +29,7 @@
                 <div>
                   <img src="~/assets/images/message-icon.png" alt="">
                   <h3 class="text-white text-2xl mt-5 font-bold font-poppins">Email</h3>
-                  <h5 class="text-gray-600 mt-4 font-poppins">nucleus@nightlifelabs.io</h5>
+                  <h5 class="text-gray-600 mt-4 font-poppins">hello@neutrongaming.io</h5>
                 </div>
                 <div class="mt-10 lg:mt-0">
                   <img src="~/assets/images/message-icon.png" alt="">
@@ -44,21 +44,26 @@
                 <div></div>
               </div>
               <div class="bg-[#080B1C] mt-20 lg:mt-0 p-8 lg:w-2/4">
-                <div>
-                  <label for="price" class="block text-md font-medium leading-6 text-gray-500 font-poppins">Email</label>
-                  <div class="relative mt-2 rounded-md shadow-sm">
-                    <input type="text" name="price" id="price" class="bg-[#273B4A] block w-full font-poppins rounded-md border-0 py-1.5 pr-20 text-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="youremail@here.com" />
+                <form @submit.prevent="submit(form)">
+                  <div>
+                    <label for="price" class="block text-md font-medium leading-6 text-gray-500 font-poppins">Email</label>
+                    <div class="relative mt-2 rounded-md shadow-sm">
+                      <input type="text" v-model="form.email" name="price" id="price" class="bg-[#273B4A] block w-full font-poppins rounded-md border-0 py-1.5 pr-20 text-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="youremail@here.com" />
+                    </div>
                   </div>
-                </div>
-                <div class="mt-5">
-                  <label for="price" class="block text-md font-medium leading-6 text-gray-500 font-poppins">Message</label>
-                  <div class="relative mt-2 rounded-md shadow-sm">
-                    <textarea rows="10" type="text" name="price" id="price" class="bg-[#273B4A] font-poppins block w-full rounded-md border-0 py-1.5 pr-20 text-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Your message ...." />
+                  <div class="mt-5">
+                    <label for="price" class="block text-md font-medium leading-6 text-gray-500 font-poppins">Message</label>
+                    <div class="relative mt-2 rounded-md shadow-sm">
+                      <textarea rows="10" v-model="form.message" type="text" name="price" id="price" class="bg-[#273B4A] font-poppins block w-full rounded-md border-0 py-1.5 pr-20 text-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Your message ...." />
+                    </div>
                   </div>
-                </div>
-                <button href="#" class="primary-button font-poppins text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-5 w-full">
-                  <span>Send</span>
-                </button>
+  
+                  {{ form }}
+  
+                  <button href="#" class="primary-button font-poppins text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-5 w-full">
+                    <span>Send</span>
+                  </button>
+                </form>
               </div>
             </div>
           </div>
@@ -81,6 +86,15 @@ const navigation = [
 ]
 
 const mobileMenuOpen = ref(false)
+
+const form = ref({
+  email: "",
+  message: ""
+});
+
+async function submit(form) {
+  
+}
 </script>
 
 <style scoped>
