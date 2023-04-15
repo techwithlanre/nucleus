@@ -12,7 +12,20 @@ export default defineNuxtConfig({
     },
     modules: [
         'nuxt-headlessui',
-        '@formkit/nuxt'
+        '@formkit/nuxt',
+        ['nuxt-mail', {
+            message: {
+              to: 'ralphie@neitrongaming.io',
+            },
+            smtp: {
+              host: "sandbox.smtp.mailtrap.io",
+              port: 2525,
+              auth: {
+                user:"bd4d46da6a73e4",
+                pass:"1ac0a1158d55a9",
+              }
+            },
+          }],
     ],
     runtimeConfig: {
         MAILHOST: process.env.MAILHOST,
