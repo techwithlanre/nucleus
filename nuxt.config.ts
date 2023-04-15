@@ -15,7 +15,7 @@ export default defineNuxtConfig({
         '@formkit/nuxt',
         ['nuxt-mail', {
             message: {
-              to: 'ralphie@neitrongaming.io',
+              to: 'ralphie@neutrongaming.io',
             },
             smtp: {
               host: "sandbox.smtp.mailtrap.io",
