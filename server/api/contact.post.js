@@ -13,8 +13,7 @@ const transporter = nodemailer.createTransport({
 
 export default defineEventHandler(async (event)  => {
     try {
-        const body  =await readBody(event);
-
+        const body = await readBody(event);
         const mail  = transporter.sendMail({
             form: `"${body.email}"`,
             to: config.CONTACTMAIL,

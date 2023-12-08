@@ -7,15 +7,17 @@ module.exports = {
     "./plugins/**/*.{js,ts}",
     "./nuxt.config.{js,ts}",
     "./app.vue",
+    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {
       fontFamily: {
-        'poppins': ['Poppins', 'san-serif']
+        'satoshi': ['Satoshi', 'san-serif']
       }
     },
   },
   plugins: [
-    require('@tailwindcss/forms')
+    require('@tailwindcss/forms'),
+    require('flowbite/plugin')
   ],
 }

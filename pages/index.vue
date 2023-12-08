@@ -1,138 +1,148 @@
 <template>
-  <div
-    class="bg-black h-screen bg-[url(~/assets/images/round-image.png)] bg-no-repeat bg-center bg-top"
-  >
-    <div
-      class="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
-    >
-      <svg
-        id="Layer_1"
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 239.76 233.59"
-      >
-        <path
-          class="cls-1"
-          d="M157.18,34.52H82.58c-24.73,0-44.97,20.24-44.97,44.97v74.6c0,24.74,20.24,44.97,44.97,44.97h74.6c24.73,0,44.97-20.24,44.97-44.97V79.49c0-24.73-20.24-44.97-44.97-44.97Zm-14.43,29.01c3.78-.88,7-.9,9.49,0h.01c.96,.35,1.76,1.1,2.11,2.06,.59,1.56,.8,3.43,.66,5.54-7.11,.46-17.04,4.91-27.83,12.37-3.45-2.61-6.83-4.91-10.1-6.9,9.57-6.87,18.57-11.45,25.66-13.07Zm-58.08,9.86c4.45-4.45,14.13-2.75,25.89,3.57,1.12,.6,2.27,1.25,3.44,1.94,3.28,1.95,6.68,4.22,10.16,6.79,5.71,4.19,11.6,9.21,17.38,14.87-2.18,3.04-4.58,6.13-7.21,9.24-6.48-6.46-13.1-12.09-19.48-16.7-3.46-2.5-6.85-4.7-10.1-6.58-1.16-.66-2.29-1.29-3.41-1.85-7.58-3.94-14.24-5.91-19.1-5.48,.21-2.4,1.01-4.37,2.43-5.79Zm27.59,21.98c-2.35,2.11-4.7,4.33-7.03,6.66-2.33,2.33-4.54,4.67-6.65,7.02-2.49-3.44-4.68-6.82-6.55-10.07,1.6-1.74,3.26-3.46,4.97-5.18,1.73-1.73,3.48-3.41,5.22-5.02,3.23,1.88,6.59,4.08,10.03,6.58Zm-38.29-7.6c.23-3.71,3.46-6.63,7.17-6.55,.35,.01,.69,.02,1.05,.06,.17,4.61,2.11,10.47,5.51,17.02,.58,1.11,1.2,2.25,1.87,3.41,1.88,3.26,4.08,6.64,6.58,10.1,4.61,6.37,10.23,12.99,16.68,19.46-3.12,2.62-6.22,5.02-9.26,7.18-5.65-5.77-10.65-11.63-14.84-17.32-2.57-3.48-4.84-6.88-6.78-10.16-.7-1.17-1.34-2.32-1.93-3.44-3.94-7.3-6.08-13.81-6.08-18.76,0-.35,0-.68,.02-1.01Zm-.02,64.07c-1.49,.07-2.85-.03-4.05-.34-1.65-.41-3.01-1.63-3.42-3.28v-.02c-.56-2.06-.54-4.58,0-7.44,.94-5.06,3.52-11.23,7.47-17.93,1.68-2.85,3.6-5.82,5.77-8.83,1.99,3.28,4.3,6.67,6.88,10.14-7.4,10.73-11.82,20.61-12.27,27.69-.13,.01-.25,.02-.38,.01Zm37.96-.85c-15.78,10.68-29.56,14.77-35.13,9.2-1.43-1.43-2.22-3.39-2.43-5.79,6.88,.6,17.35-3.58,28.93-11.35,.95-.64,1.92-1.31,2.9-2,3.05-2.17,6.15-4.56,9.28-7.21,3.75-3.13,7.54-6.59,11.27-10.32,2.79-2.79,5.44-5.62,7.91-8.44,.78-.88,1.54-1.77,2.27-2.65,2.64-3.13,5.05-6.23,7.22-9.28,9.14-12.78,14.14-24.51,13.48-32,2.4,.21,4.37,1.01,5.79,2.43,.74,.74,1.31,1.62,1.7,2.64,1.07,2.63,1.02,6.14,0,10.28-1.73,7.04-6.29,15.89-13.06,25.3-2.21,3.06-4.65,6.17-7.3,9.31-.75,.89-1.53,1.78-2.33,2.68-2.34,2.66-4.84,5.33-7.47,7.96-3.57,3.57-7.19,6.89-10.8,9.94-3.14,2.65-6.27,5.09-9.34,7.29-.97,.71-1.95,1.38-2.9,2.03Zm50.1,16.55c-.6,1.56-1.98,2.68-3.63,2.97-.78,.14-1.6,.21-2.48,.21-9.07,0-23.37-7.22-38.2-19.33,3.05-2.25,6.13-4.73,9.23-7.4,13.73,11.03,26.91,17.79,35.78,18.45,.07,1.93-.15,3.65-.71,5.11Zm11.68-13.17c-.22,2.33-1.01,4.23-2.41,5.63-1.42,1.43-3.39,2.22-5.79,2.43,.15-1.66,.01-3.53-.39-5.58-1.68-8.77-8.2-20.74-18.21-33.15,2.65-3.17,5.07-6.33,7.25-9.41,4.3,5.21,7.98,10.38,10.96,15.27,5.07,8.32,8.1,15.87,8.6,21.65v3.16Z"
-        />
-      </svg>
-    </div>
-    <div class="px-6 pt-6 lg:px-[150px]">
-      <nav class="flex items-center justify-between" aria-label="Global">
-        <div class="flex lg:flex-1">
-          <a href="/" class="-m-1.5 p-1.5">
-            <span class="sr-only">Nucleus</span>
-            <img class="h-10 lg:h-10" src="~/assets/images/logo.svg" alt="" />
-          </a>
+    <div class="bg-white">
+        <div class="items-center h-screen max-h-screen  bg-[url(https://images.unsplash.com/photo-1580234811497-9df7fd2f357e?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] bg-no-repeat">    
+            <div class="backdrop-brightness-900 h-screen">
+                <navbar />
+                <section class="">
+                    <div class="py-8 sm:px-4 px-10  mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+                        <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700" role="alert">
+                            <span class="sm:text-xs text-[10px] bg-[#EA5B2B] rounded-full text-white px-4 sm:py-1.5 mr-3">New</span> <span class="sm:text-sm text-[10px] font-medium font-satoshi">GAP is almost out! See what's new</span> 
+                            <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        </a>
+        
+                        <h1 class="mb-4 sm:text-4xl text-xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white font-satoshi sm:leading-10">
+                            Welcome to the first end-to-end professional gaming platform, built for gamers, hosts and sponsors
+                        </h1>
+                        <p class="mb-8 sm:text-lg text-sm font-normal text-gray-100 lg:text-xl sm:px-16 xl:px-48 dark:text-gray-400 font-satoshi">Play Your Way to Victory on Our Gaming Platform!</p>
+                        
+        
+                        <form class="mt-10 flex flex-col lg:items-center justify-center gap-x-6 sm:px-96">
+                            <div class="flex sm:flex-row flex-col items-center sm:border-b border-white py-2 w-full">
+                                <input v-model="form.email" class="focus:outline-none text-center sm:border-none border-1 outline-white active:outline-4 appearance-none bg-transparent border-none w-full mr-3 py-1 px-2 leading-tight font-satoshi text-white  placeholder:text-gray-400" 
+                                type="text" placeholder="janedoe@gmail.com" aria-label="email">
+                                <button @click="handleSubmit" class="font-satoshi sm:mt-0 mt-3 flex-shrink-0 bg-white hover:bg-[#EA5B2B] duration-500 hover:text-white text-sm text-[#EA5B2B] py-1 px-4 rounded-full" type="button">
+                                    Join the waitlist
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
         </div>
-        <div class="lg:flex lg:flex-1 lg:justify-end">
-          <nuxt-link to="contact">
-            <span
-              class="rounded-md font-poppins bg-[#EA5B2B] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >Contact Us</span
-            >
-          </nuxt-link>
-        </div>
-      </nav>
-    </div>
-    <main>
-      <div class="relative px-6 lg:px-5">
-        <div class="mx-auto lg:w-[989px] py-32 sm:py-48 lg:py-56">
-          <div class="lg:text-center">
-            <h1
-              class="text-4xl font-bold tracking-tight text-white sm:text-4xl font-poppins"
-            >
-              Experience The Best of Decentralized Gaming <br /><span
-                class="gradient-text"
-                >Neutron</span
-              >
-              Is Coming.
-            </h1>
-            <p class="mt-6 text-lg sm:text-lg leading-8 text-gray-200 font-poppins">
-              Be the first to know before we go live...
-            </p>
-            <form>
-              <div class="mt-10 flex flex-col lg:items-center justify-center gap-x-6">
-                <div
-                  class="bg-gradient-to-r from-[#9089FC] to-[#EA5B2B] pt-0 pb-0.5 rounded-full w-full lg:w-[551px]"
-                >
-                  <input
-                    v-model="form.email"
-                    type="text"
-                    name=""
-                    id=""
-                    class="bg-[#000000] text-white font-poppins border-0 rounded-full focus:border-0 focus:ring-0 w-full"
-                    placeholder="Type your email here..."
-                  />
+        <div class="px-20 flex flex-row justify-center bg-cover bg-center bg-no-repeat bg-[url(https://images.unsplash.com/photo-1531685250784-7569952593d2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] ">
+            <div class="my-20 text-center justify-center max-w-5xl">
+                <h3 class="sm:text-4xl font-bold font-satoshi">About Games and Players</h3>
+                <div class="text-xl font-satoshi mt-10">
+                    <p>Games and Players (GAP) Network is a of different participants in the eSports ecosystem in Nigeria. 
+                    We have a strong community of players, tournament hosts, gaming guilds, game developers and distributors, 
+                    and sponsors.</p>
+                    
+                    <p class="mt-4">We have organized over 10 tournaments and given out over $3,000 in prizes on different games, 
+                    both mobile and console. We are currently building the first ever end-to-end platform for players, tournament hosts and sponsors.</p>
                 </div>
-                <!-- <img v-if="this.loading" src="~/assets/images/spinner.svg" class="h-3" alt=""> -->
-                <button
-                  type="button"
-                  @click="handleSubmit"
-                  class="gradient-button text-sm font-semibold font-poppins text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 mt-5"
-                >
-                  <span>Join the waitlist</span>
-                </button>
-              </div>
-            </form>
-          </div>
+            </div> 
         </div>
-      </div>
-    </main>
-  </div>
+        <div class="px-20 flex flex-col justify-center">
+          <section class="bg-white dark:bg-gray-900">
+            <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white font-satoshi">Let’s stay connected</h2>
+                <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl font-satoshi">We are always happy to hear from you. Fill out the form and <br class="hidden lg:block">we will get back to you within 24hrs</p>
+                <form @submit.prevent="submit(emailForm)" class="space-y-8">
+                    <div>
+                        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 font-satoshi">Your email</label>
+                        <input type="email" id="email" v-model="emailForm.email" class="shadow-sm bg-gray-50 border font-satoshi border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="email@onegap.network" required>
+                    </div>
+                    <div>
+                        <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300 font-satoshi">Subject</label>
+                        <input type="text" id="subject" v-model="emailForm.subject" class="block p-3 w-full text-sm font-satoshi text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required>
+                    </div>
+                    <div class="sm:col-span-2">
+                        <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400 font-satoshi">Your message</label>
+                        <textarea id="message" v-model="emailForm.message" rows="6" class="block p-2.5 w-full text-sm font-satoshi text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
+                    </div>
+                    <button type="submit" class="py-3 px-5 w-full text-sm font-medium text-center font-satoshi text-white rounded-lg bg-orange-500 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
+                </form>
+            </div>
+          </section>
+        </div>
+    </div>
 </template>
+  
+  <script>
+  export default {
+    name: "Home",
+    data() {
+      return {
+        done: false,
+        form: {
+          email: "",
+        },
 
-<script>
-export default {
-  name: "Home",
-  data() {
-    return {
-      done: false,
-      form: {
-        email: "",
+        emailForm: {
+          email: "",
+          message: "",
+          subject: "",
+        }
+      };
+    },
+    methods: {
+      async handleSubmit(e) {
+        e.preventDefault();
+        if (this.form.email.length > 0) {
+          const postData = {
+            email: this.form.email,
+          };
+  
+          const response = await useFetch("https://neutron.mystagingenv.xyz/api/waitlist", {
+              method: "post",
+              body: JSON.stringify(postData),
+            }
+          );
+      
+          this.form.email = "";
+          alert("You have been added to our waitlist!");
+        } else {
+          alert("Enter your email address");
+        }
       },
-    };
-  },
-  methods: {
-    async handleSubmit(e) {
-      e.preventDefault();
-      if (this.form.email.length > 0) {
-        const postData = {
-          email: this.form.email,
-        };
 
-        const response = await useFetch("https://neutron.mystagingenv.xyz/api/waitlist", {
-            method: "post",
-            body: JSON.stringify(postData),
-          }
-        );
-    
-        this.form.email = "";
-        alert("You have been added to our waitlist!");
-      } else {
-        alert("Enter your email address");
+      async submit(form) {
+        mail.send({
+          from: form.email,
+          subject: form.subject,
+          text: form.message
+        });
       }
     },
-  },
-};
-</script>
+  };
+  </script>
+  
+  <style scoped>
+  .gradient-text {
+    background: linear-gradient(91.09deg, #ea5b2b 37%, #05a6f0 50.99%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .gradient-button {
+    margin-top: 20px;
+    width: 297px;
+    height: 42px;
+    left: 573px;
+    top: 666.73px;
+  
+    background: linear-gradient(92.69deg, #ea5b2b -12.54%, #271813 107.57%);
+    border-radius: 20px;
+  }
 
-<style scoped>
-.gradient-text {
-  background: linear-gradient(91.09deg, #ea5b2b 37%, #05a6f0 50.99%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.gradient-button {
-  margin-top: 20px;
-  width: 297px;
-  height: 42px;
-  left: 573px;
-  top: 666.73px;
-
-  background: linear-gradient(92.69deg, #ea5b2b -12.54%, #271813 107.57%);
-  border-radius: 20px;
-}
-</style>
+  .submit-button {
+    margin-top: 20px;
+    width: 297px;
+    height: 42px;
+    left: 573px;
+    top: 666.73px;
+    border-radius: 20px;
+  }
+  </style>
+  
