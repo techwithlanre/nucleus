@@ -9,7 +9,6 @@
                             <span class="sm:text-xs text-[10px] bg-[#EA5B2B] rounded-full text-white px-4 sm:py-1.5 mr-3">New</span> <span class="sm:text-sm text-[10px] font-medium font-satoshi">GAP is almost out! See what's new</span> 
                             <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
                         </a>
-        
                         <h1 class="mb-4 sm:text-4xl text-xl font-extrabold tracking-tight text-white md:text-5xl lg:text-6xl dark:text-white font-satoshi sm:leading-10">
                             Welcome to the first end-to-end professional gaming platform, built for gamers, hosts and sponsors
                         </h1>
@@ -29,7 +28,7 @@
                 </section>
             </div>
         </div>
-        <div class="px-20 flex flex-row justify-center bg-cover bg-center bg-no-repeat bg-[url(https://images.unsplash.com/photo-1531685250784-7569952593d2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] ">
+        <div id="about" class="px-20 flex flex-row justify-center bg-cover bg-center bg-no-repeat bg-[url(https://images.unsplash.com/photo-1531685250784-7569952593d2?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] ">
             <div class="my-20 text-center justify-center max-w-5xl">
                 <h3 class="sm:text-4xl font-bold font-satoshi">About Games and Players</h3>
                 <div class="text-xl font-satoshi mt-10">
@@ -42,7 +41,7 @@
                 </div>
             </div> 
         </div>
-        <div class="px-20 flex flex-col justify-center">
+        <div id="contact" class="px-20 flex flex-col justify-center">
           <section class="bg-white dark:bg-gray-900">
             <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white font-satoshi">Let’s stay connected</h2>
